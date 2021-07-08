@@ -28,26 +28,24 @@ body {
     text-decoration: none;
     font-size: 18px;
     color: white;
-    padding: 25px;
-
+    margin: 0 25px;
 }
 
-/*スマホ用のアイコン表示DIV*/
-.IOSLayout {
-    text-align: right;
-}
-
-.IOSLayout span {
+/*JSによって動的に与えるClass*/
+.SelectOfThis {
+    text-decoration: none;
     font-size: 25px;
-    padding: 12.5px 12.5px;
-    margin-right: 10%;
-    display: none;
+    color: white;
+    margin: 0 25px;
+    border-bottom: 1.5px solid #eee;
+
 }
+
 
 /*AboutMe*/
 
 .About {
-    padding-top: 80px;
+    padding-top: 50px;
     height: 500px;
     width: 100%;
     text-align: center;
@@ -125,7 +123,7 @@ body {
     width: 100%;
     left: 0%;
     position: absolute;
-    color: black;
+    color: #3d3c47;
 }
 
 .ImageIcons img {
@@ -152,7 +150,7 @@ body {
 }
 
 .ChildIcons img {
-    opacity: 0.6;
+    opacity: 0.7;
     width: 100px;
     height: 100px;
 }
@@ -166,9 +164,44 @@ body {
 }
 
 .unity img {
-    opacity: 0.6;
+    opacity: 0.7;
     width: 100px;
     height: 100px;
+}
+
+/*ポートフォリオのCSS*/
+.Portfolio {
+    padding-top: 50px;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    background-color: #f7f7f7;
+
+}
+
+.PChildIcons {
+    top: 25%;
+    width: 100%;
+    left: 0%;
+    position: absolute;
+}
+
+.PChildIcons img {
+    opacity: 0.9;
+    width: 125px;
+    height: 125px;
+}
+
+.Desc {
+    flex-direction: column;
+    margin: auto;
+    margin-left: 50px;
+    color: #5f5d60;
+
+}
+
+.Desc a {
+    color: #3d3c47;
 }
 
 
@@ -192,8 +225,10 @@ body {
 /* スマホで見た時の表示*/
 @media (max-width:790px) {
 
+    /*TOP*/
+
     .Icons {
-        height: 900px;
+        height: 850px;
         width: 100%;
         background-color: #f7f7f7;
         text-align: center;
@@ -202,6 +237,8 @@ body {
     .IconsContainer {
         flex-direction: column;
     }
+
+    /*Experience*/
 
     .Languages {
         height: 1800px;
@@ -215,16 +252,125 @@ body {
         width: 100%;
     }
 
-    /* スマホではトップの文字を非表示 */
+    .PImageIcons {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    /*Portfolio*/
+    .Portfolio {
+        padding-top: 50px;
+        height: 700px;
+        width: 100%;
+        text-align: center;
+        background-color: #f7f7f7;
+
+    }
+
+    .PChildIcons {
+        top: 25%;
+        width: 100%;
+        left: 0%;
+        position: absolute;
+    }
+
+    .PChildIcons img {
+        opacity: 0.9;
+        width: 125px;
+        height: 125px;
+    }
+
+    .Desc {
+        flex-direction: column;
+        margin: auto;
+        font-size: 14px;
+        color: #5f5d60;
+
+    }
+
+
+}
+
+@media (max-width:540px) {
+
     .navTexts {
-        display: none;
+        text-align: center;
+        padding: 12.5px 0;
 
     }
 
-    /* スマホ用格納アイコンを表示する */
-    .IOSLayout span {
-        display: block;
+    .navbar a {
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        margin: 0 20px;
+    }
+
+    .About {
+        padding-top: 50px;
+        height: 400px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .Text h2 {
+
+        border-bottom: 2px solid #eee;
+        font-weight: normal;
+        letter-spacing: 3px;
+        margin-left: 37.5%;
+        font-size: 15px;
+        width: 25%;
 
     }
 
+    .About p {
+        font-size: 13px;
+        font-weight: normal;
+        color: #5f5d60;
+    }
+
+    .Desc {
+        flex-direction: column;
+        margin: auto;
+        font-size: 13px;
+        color: #5f5d60;
+
+    }
+
+    .footer p {
+        text-align: center;
+        color: #b3aeb5;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:360px) {
+
+    .navTexts {
+        text-align: center;
+        padding: 12.5px 0;
+
+    }
+
+    .navbar a {
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        margin: 0 15px;
+    }
+
+
+    .About {
+        padding-top: 50px;
+        height: 450px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer p {
+        text-align: center;
+        color: #b3aeb5;
+        font-size: 14px;
+    }
 }
