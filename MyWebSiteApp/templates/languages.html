@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+
+{% comment %} 使用できるブログラミング言語の表示 {% endcomment %}
+<div class="Languages">
+
+    <div class="Text">
+        <h2>Language</h2>
+    </div>
+
+    <div class="IconsContainer">
+        <div class="ImageIcons">
+            <img src="{% static 'hexagon-1.png' %}" />
+            <div class="ChildIcons">
+                <img src="{% static 'c-sharp.svg' %}" />
+            </div>
+        </div>
+        <div class="ImageIcons">
+            <img src="{% static 'hexagon-1.png' %}" />
+            <div class="ChildIcons">
+                <img src="{% static 'c-plusplus.svg' %}" />
+            </div>
+        </div>
+        <div class="ImageIcons">
+            <img src="{% static 'hexagon-1.png' %}" />
+            <div class="ChildIcons">
+                <img src="{% static 'java.svg' %}" />
+            </div>
+
+        </div>
+
+    </div>
+
+    {% comment %} 使用できるプログラミング言語の表示2 {% endcomment %}
+    <div class="IconsContainer">
+
+        <div class="ImageIcons">
+            <img src="{% static 'hexagon-1.png' %}" />
+            <div class="ChildIcons">
+                <img src="{% static 'javascript.svg' %}" />
+            </div>
+        </div>
+
+        <div class="ImageIcons">
+            <img src="{% static 'hexagon-1.png' %}" />
+            <div class="ChildIcons">
+                <img src="{% static 'ruby.svg' %}" />
+            </div>
+        </div>
+
+        <div class="ImageIcons">
+            <img src="{% static 'hexagon-1.png' %}" />
+            <div class="ChildIcons">
+                <img src="{% static 'python.svg' %}" />
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% comment %} 使用できるフレームワークの表示 {% endcomment %}
+<div class="Icons">
+
+    <div class="Text">
+        <h2>Framework</h2>
+    </div>
+
+    <div class="IconsContainer">
+        <div class="ImageIcons">
+            <img src="{% static 'hexagon-1.png' %}" />
+            <div class="ChildIcons">
+                <img src="{% static 'django.svg' %}" />
+            </div>
+        </div>
+        <div class="ImageIcons">
+            <img src="{% static 'hexagon-1.png' %}" />
+            <div class="ChildIcons">
+                <img src="{% static 'rails.svg' %}" />
+            </div>
+        </div>
+    </div>
+</div>
+
+{% comment %} 使用できるソフトウェアの表示 {% endcomment %}
+<div class="Icons">
+
+    <div class="Text">
+        <h2>Software</h2>
+    </div>
+
+    <div class="IconsContainer">
+        <div class="ImageIcons">
+            <img src="{% static 'hexagon-1.png' %}" />
+            <div class="unity">
+                <img src="{% static 'unity.svg' %}" />
+            </div>
+        </div>
+        <div class="ImageIcons">
+            <img src="{% static 'hexagon-1.png' %}" />
+            <div class="ChildIcons">
+                <img src="{% static 'android-icon.svg' %}" />
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock  %}

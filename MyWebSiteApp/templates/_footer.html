@@ -1,0 +1,8 @@
+{% load static %}
+
+<div class="footer">
+    <p>© {% now "Y" %} Ibuki Nishikawa</p>
+</div>
+
+{% comment %} JSはそれより上を読み込むので一番下に記述 {% endcomment %}
+<script src="{% static 'myweb.js' %}"></script>

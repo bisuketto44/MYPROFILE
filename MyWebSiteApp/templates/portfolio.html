@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+
+<div class="Portfolio">
+
+    <div class="Text">
+        <h2>Portfolios</h2>
+    </div>
+
+    <div class="IconsContainer">
+        <div class="ImageIcons">
+            <img src="{% static 'hexagon-1.png' %}" />
+            <div class="PChildIcons">
+                <img src="{% static 'acxTBdQTOZleIkO1625652275_1625652295.png' %}" />
+            </div>
+        </div>
+
+        <div class="Desc">
+            <ul>
+                <li>
+                    <p>ピクセル配信王++ (スマートフォン向けゲーム)</p>
+                </li>
+                <li>
+                    <p>C#/Unity</p>
+                </li>
+                <li><p><a href="https://unityroom.com/games/5164297" target="_blank"><span class="fa fa-gamepad"></span>GamePlay(PC)</a></p></li>
+                <li><p><a><span class="fa fa-apple"></span>AppleStore(準備中)</a></p></li>
+                <li><p><a href="https://github.com/bisuketto44/NewPiexcelGame/tree/master" target="_blank"><span class="fa fa-github"></span>Github</a></p></li>
+            </ul>
+            
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock  %}

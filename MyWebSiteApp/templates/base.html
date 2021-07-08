@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'stylesheet.css' %}">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>MYPROFILE</title>
+</head>
+
+<body>
+    {% include "_navbar.html" %}
+
+    {% block main %}
+    <p>各種内容をここに表示します</p>
+    {% endblock  %}
+
+    {% include "_footer.html" %}
+
+
+</body>
+
+</html>
