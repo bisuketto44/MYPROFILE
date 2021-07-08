@@ -26,7 +26,7 @@ body {
 
 .navbar a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 19px;
     color: white;
     margin: 0 25px;
 }
@@ -296,7 +296,7 @@ body {
     .navTexts {
         text-align: center;
         padding: 12.5px 0;
-
+        margin-left: 18px;
     }
 
     .navbar a {
@@ -355,9 +355,25 @@ body {
 
     .navbar a {
         text-decoration: none;
-        font-size: 15px;
+        font-size: 13px;
         color: white;
         margin: 0 15px;
+    }
+
+    .Text {
+        padding-top: 40px;
+        color: #5f5d60;
+        text-align: center;
+    }
+
+    .Text h2 {
+
+        border-bottom: 2px solid #eee;
+        font-weight: normal;
+        margin-left: 37.5%;
+        font-size: 15px;
+        width: 25%;
+
     }
 
 
